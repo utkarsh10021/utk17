@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behaviour: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fhtmlcolorcodes.com%2Fcolors%2Fblack%2F&psig=AOvVaw0kpYVkdU8Y48o2EHMOXXOC&ust=1687190939954000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCICV3pWazf8CFQAAAAAdAAAAABAE);
+    background-size: cover;
+    background-position: centre;
+}
+.container{
+    padding:10px 10%;
+}
+nav{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.logo{
+    width: 140px;
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px; 
+    
+
+
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s; 
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+    
+}
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color: #ff004f;
+
+
+}
+.search-bar{
+    position:absolute;
+    background: #282c38;
+    width: 448px;
+    height: 45px;
+    margin: 50px auto;
+    left: 130px;
+    top: 243px
+    border-radius 6px;
+    
+}
+.search-bar form{
+    display: flex;
+    align-items: left;
+    flex-wrap: wrap;
+
+
+}
+.search-bar form input{
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.search-bar form button{
+    background: #ff004f;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.search-bar form button img{
+    width: 15px;
+    margin-top: 7px;
+}
+.location-input{
+    flex: 1;
+
+}
+.search-bar form label{
+    font-weight: 600;
+}
+.sub-title{
+    margin: 50px 0 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #333;
+}
+
+.exclusives{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    grid-gap: 10px;
+}
+.exclusives div img{
+    width: 100%;
+    border-radius: px;
+}
+.exclusives div {
+    position: relative;
+
+
+}
+.exclusives div span{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #ff004f;
+}
+/*----------------services--------*/
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+  background: #262626;
+  padding: 40px;
+  font-size: 13px;  
+  font-weight: 300;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 10px;
+    margin-bottom: 30px;
+
+
+
+}
+.services-list div h2{
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+
+
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+
+
+}
